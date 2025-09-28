@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PaceOn</title>
+    <meta
+      name="description"
+      content="PaceOn - Learn faster with speed reading. Coming soon with AI-powered reading exercises and progress tracking."
+    />
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="public/favicon.ico" />
+
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Urbanist:wght@400;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="min-h-screen text-white">
+    <!-- Background Elements -->
+    <div class="pointer-events-none fixed inset-0 overflow-hidden">
+      <div
+        class="floating absolute -right-40 -top-40 h-80 w-80 rounded-full bg-gradient-to-br from-orange-500/20 to-yellow-500/20 blur-3xl"
+      ></div>
+      <div
+        class="floating absolute -bottom-40 -left-40 h-80 w-80 rounded-full bg-gradient-to-br from-yellow-500/20 to-orange-500/20 blur-3xl"
+        style="animation-delay: -1.5s"
+      ></div>
+      <div
+        class="animate-pulse-slow absolute left-1/2 top-1/2 h-96 w-96 -translate-x-1/2 -translate-y-1/2 transform rounded-full bg-gradient-to-br from-orange-500/10 to-yellow-500/10 blur-3xl"
+      ></div>
+    </div>
+
+    <!-- Main Content -->
+    <div class="relative z-10 flex min-h-screen flex-col">
+      <!-- Header -->
+      <header class="flex items-center justify-between p-6 md:p-8">
+        <div class="flex items-center gap-3">
+          <img src="public/logo.svg" alt="PaceOn Logo" class="h-12 w-12" />
+          <h1 class="logo-text text-2xl text-white md:text-3xl">PaceOn</h1>
+        </div>
+      </header>
+
+      <!-- Hero Section -->
+      <main
+        class="flex flex-1 flex-col items-center justify-center px-6 py-12 md:px-8"
+      >
+        <div class="mx-auto max-w-4xl text-center">
+          <!-- Coming Soon Badge -->
+          <div
+            class="glass-effect mb-8 inline-flex items-center gap-2 rounded-full px-4 py-2"
+          >
+            <div class="h-2 w-2 animate-pulse rounded-full bg-green-400"></div>
+            <span class="text-sm font-medium">Coming Soon</span>
+          </div>
+
+          <!-- Main Heading -->
+          <h1 class="hero-text mb-6 text-5xl md:text-7xl lg:text-8xl">
+            <span class="gradient-text">Read</span>
+            <br />
+            <span class="text-white">faster,</span>
+            <br />
+            <span class="gradient-text">learn</span>
+            <span class="text-white"> more</span>
+          </h1>
+
+          <!-- Subtitle -->
+          <p
+            class="mx-auto mb-12 max-w-2xl text-xl leading-relaxed text-gray-300 md:text-2xl"
+          >
+            Unleash your reading superpower with PaceOn's AI-powered speed
+            reading exercises and progress tracking.
+          </p>
+
+          <!-- Features Grid -->
+          <div
+            class="mb-16 grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3"
+          >
+            <div class="feature-card rounded-2xl p-6 text-center">
+              <div
+                class="icon-bg mx-auto mb-4 flex h-12 w-12 items-center justify-center rounded-xl"
+              >
+                <svg
+                  class="h-6 w-6 text-white"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M13 10V3L4 14h7v7l9-11h-7z"
+                  ></path>
+                </svg>
+              </div>
+              <h3 class="mb-2 text-lg font-semibold">AI-Powered</h3>
+              <p class="text-sm text-gray-400">
+                Advanced algorithms adapt to your reading pace and comprehension
+                level
+              </p>
+            </div>
+
+            <div class="feature-card rounded-2xl p-6 text-center">
+              <div
+                class="icon-bg mx-auto mb-4 flex h-12 w-12 items-center justify-center rounded-xl"
+              >
+                <svg
+                  class="h-6 w-6 text-white"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"
+                  ></path>
+                </svg>
+              </div>
+              <h3 class="mb-2 text-lg font-semibold">Progress Tracking</h3>
+              <p class="text-sm text-gray-400">
+                Monitor your reading speed improvements with detailed analytics
+              </p>
+            </div>
+
+            <div class="feature-card rounded-2xl p-6 text-center">
+              <div
+                class="icon-bg mx-auto mb-4 flex h-12 w-12 items-center justify-center rounded-xl"
+              >
+                <svg
+                  class="h-6 w-6 text-white"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.746 0 3.332.477 4.5 1.253v13C19.832 18.477 18.246 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"
+                  ></path>
+                </svg>
+              </div>
+              <h3 class="mb-2 text-lg font-semibold">Custom Stories</h3>
+              <p class="text-sm text-gray-400">
+                Practice with content tailored to your interests and reading
+                level
+              </p>
+            </div>
+          </div>
+
+          <!-- Stats -->
+          <div class="mb-16 grid grid-cols-2 gap-6 md:grid-cols-4">
+            <div class="text-center">
+              <div class="gradient-text mb-2 text-3xl font-bold md:text-4xl">
+                85%
+              </div>
+              <div class="text-sm text-gray-400">Speed Increase</div>
+            </div>
+            <div class="text-center">
+              <div class="gradient-text mb-2 text-3xl font-bold md:text-4xl">
+                AI
+              </div>
+              <div class="text-sm text-gray-400">Powered</div>
+            </div>
+            <div class="text-center">
+              <div class="gradient-text mb-2 text-3xl font-bold md:text-4xl">
+                1000+
+              </div>
+              <div class="text-sm text-gray-400">Stories</div>
+            </div>
+            <div class="text-center">
+              <div class="gradient-text mb-2 text-3xl font-bold md:text-4xl">
+                24/7
+              </div>
+              <div class="text-sm text-gray-400">Available</div>
+            </div>
+          </div>
+        </div>
+      </main>
+
+      <!-- Footer -->
+      <footer class="border-t border-gray-800 p-6 md:p-8">
+        <div
+          class="mx-auto flex max-w-4xl flex-col items-center justify-between gap-4 md:flex-row"
+        >
+          <div class="flex items-center gap-2 text-gray-400">
+            <svg class="h-4 w-4" fill="currentColor" viewBox="0 0 20 20">
+              <path
+                fill-rule="evenodd"
+                d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z"
+                clip-rule="evenodd"
+              ></path>
+            </svg>
+            <span class="text-sm">Based in Madrid, Spain</span>
+          </div>
+
+          <div class="flex items-center gap-6">
+            <div class="text-sm text-gray-400">
+              © 2025 PaceOn. All rights reserved.
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <!-- JavaScript -->
+    <script>
+      // Add some interactive animations
+      document.addEventListener("DOMContentLoaded", function () {
+        // Animate elements on scroll
+        const observerOptions = {
+          threshold: 0.1,
+          rootMargin: "0px 0px -50px 0px",
+        };
+
+        const observer = new IntersectionObserver(function (entries) {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              entry.target.style.opacity = "1";
+              entry.target.style.transform = "translateY(0)";
+            }
+          });
+        }, observerOptions);
+
+        // Observe feature cards
+        document.querySelectorAll(".feature-card").forEach((card) => {
+          card.style.opacity = "0";
+          card.style.transform = "translateY(20px)";
+          card.style.transition = "opacity 0.6s ease, transform 0.6s ease";
+          observer.observe(card);
+        });
+      });
+    </script>
+  </body>
+</html>

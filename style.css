@@ -1,0 +1,113 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap");
+
+:root {
+  --primary-orange: 254, 74, 34;
+  --primary-yellow: 255, 213, 54;
+  --primary-dark: 22, 26, 26;
+  --secondary-dark: 23, 33, 33;
+  --primary-green: 64, 196, 99;
+  --dark-grey: 50, 52, 55;
+  --pure-white: 255, 255, 255;
+  --background-white: 243, 243, 243;
+  --pure-black: 0, 0, 0;
+  --primary-grey: 53, 58, 58;
+  --hover-grey: 86, 90, 90;
+  --mid-grey: 115, 115, 115;
+  --light-grey: 175, 168, 168;
+  --lighter-grey: 196, 196, 196;
+  --primary-bone: 214, 214, 214;
+  --soft-white: 242, 242, 242;
+}
+
+body {
+  font-family: "Inter", "Urbanist", sans-serif;
+  background: linear-gradient(
+    135deg,
+    rgb(var(--primary-dark)) 0%,
+    rgb(var(--secondary-dark)) 100%
+  );
+  overflow-x: hidden;
+}
+
+.logo-text {
+  font-family: "Urbanist", sans-serif;
+  font-weight: 800;
+}
+
+.hero-text {
+  font-family: "Urbanist", sans-serif;
+  font-weight: 700;
+}
+
+.animate-pulse-slow {
+  animation: pulse 3s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+.animate-bounce-slow {
+  animation: bounce 2s infinite;
+}
+
+.floating {
+  animation: floating 3s ease-in-out infinite;
+}
+
+@keyframes floating {
+  0%,
+  100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+}
+
+.gradient-text {
+  color: rgb(var(--primary-orange));
+  text-shadow: inset 0 1px 2px rgba(var(--primary-dark), 0.3);
+}
+
+.glass-effect {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.countdown-item {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.feature-card {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  transition: all 0.3s ease;
+}
+
+.feature-card:hover {
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(var(--primary-orange), 0.3);
+  transform: translateY(-5px);
+}
+
+.icon-bg {
+  background: rgb(var(--primary-orange));
+  box-shadow: inset 0 2px 4px rgba(var(--primary-dark), 0.2);
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgb(var(--primary-dark));
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgb(var(--primary-orange));
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(var(--primary-yellow));
+}
